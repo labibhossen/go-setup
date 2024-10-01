@@ -1,0 +1,7 @@
+sudo apt update
+sudo apt install golang-go
+echo export PATH=$PATH:$HOME/go/bin >> $home/.bashrc
+cd
+go install github.com/ffuf/ffuf/v2@latest
+cd go/bin
+sudo mv ffuf /usr/bin/
